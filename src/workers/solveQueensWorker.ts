@@ -22,9 +22,9 @@ self.onmessage = async (e) => {
     const solutions: number[][][] = [];
     const colorBoard = board.map((row) => [...row]);
     let solutionCount = 0;
-    const labels = Array.from({ length: 15 }, (_, i) =>
+    const labels = Array.from({ length: N }, (_, i) =>
       String.fromCharCode("A".charCodeAt(0) + i),
-    ).slice(0, N);
+    );
     const colorCoords = new Map<string, { row: number; col: number }[]>();
     for (const label of labels) {
         const coordsForColor = findCoordsForColor(label, board);
