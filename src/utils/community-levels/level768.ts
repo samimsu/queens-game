@@ -13,10 +13,8 @@ import {
   lightWisteria,
   macNCheese,
   nomad,
-  periwinkle,
   saharaSand,
   turquoiseBlue,
-  white,
 } from "../colors";
 
 const level = {
